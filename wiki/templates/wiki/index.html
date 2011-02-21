@@ -3,15 +3,15 @@
 {% load i18n %}
 
 {% block content %}
-	<h1>{% trans "Index" %}</h1>
+<h1>{% trans "Index" %}</h1>
 
-	{% if pages %}
-		<ul>
-			{% for page in pages %}
-				<li><a href="{{ page.get_absolute_url }}">{{ page.name }}</a></li>
-			{% endfor %}
-		</ul>
-	{% else %}
-		<p><a href="{% url wiki-edit-page "NewPage" %}">{% trans "Create a new page" %}</a>.</p>
-	{% endif %}
+{% if pages %}
+<ul>
+  {% for page in pages %}
+  <li><a href="{{ page.get_absolute_url }}">{{ page.name }}</a></li>
+  {% endfor %}
+</ul>
+{% else %}
+<p><a href="{% url wiki-edit-page "NewPage" %}">{% trans "Create a new page" %}</a>.</p>
+{% endif %}
 {% endblock %}
