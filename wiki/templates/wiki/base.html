@@ -1,11 +1,12 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-<head>
+{% load i18n %}
 
-	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-	<title>{{ page.name }} &mdash; Wiki</title>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Wiki {% if page.name %} | {{ page.name }}{% endif %}</title>
 
-	<style media="screen,projection" type="text/css">
+    <style media="screen,projection" type="text/css">
 		body {
 			background: #fff;
 			color: #222;
@@ -69,13 +70,13 @@
 		}
 	</style>
 
-</head>
-<body>
+  </head>
+  <body>
 
-	<div id="body">
-		{% block content %}{% endblock %}
-		<p class="footer"><a href="{% url wiki.views.index %}">List all pages</a> | {% block footer %}{% endblock %}Powered by <a href="http://github.com/tmitchell/django-wiki">Wiki</a></p>
-	</div>
+    <div id="body">
+      {% block content %}{% endblock %}
+      <p class="footer"><a href="{% url wiki.views.index %}">{% trans "List all pages" %}</a> | {% block footer %}{% endblock %}{% trans "Powered by" %} <a href="http://github.com/sebasmagri/django-wiki">django-wiki</a></p>
+    </div>
 
 </body>
 </html>
