@@ -9,6 +9,8 @@ John Sutherland (https://github.com/sneeu)
 
 Taylor Mitchell (https://github.com/tmitchell)
 
+Sebastián Magrí (https://github.com/sebasmagri)
+
 Basic Usage
 -----------
 
@@ -39,6 +41,13 @@ like this::
 
     WIKI_WORD = r'(?:[A-Z]+[a-z]+){2,}'
 
+Dependencies
+------------
+
+``Django>=1.2.5``
+
+``Markdown``
+
 Bug Reports/Feature Requests
 ----------------------------
 
@@ -47,5 +56,5 @@ check `the issues list`_ to see if it's already been reported. If not,
 open a new issue and I'll do my best to respond quickly.
 
 .. _WikiWord: http://twiki.org/cgi-bin/view/TWiki/WikiWord
-.. _project page on Github: https://github.com/tmitchell/django-wiki
-.. _the issues list: https://github.com/tmitchell/django-wiki/issues
+.. _project page on Github: https://github.com/sebasmagri/django-wiki
+.. _the issues list: https://github.com/sebasmagri/django-wiki/issues
