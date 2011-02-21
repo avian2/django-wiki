@@ -1,8 +1,9 @@
 {% extends 'wiki/base.html' %}
 
+{% load i18n %}
 
 {% block content %}
-	<h1>Index</h1>
+	<h1>{% trans "Index" %}</h1>
 
 	{% if pages %}
 		<ul>
@@ -11,6 +12,6 @@
 			{% endfor %}
 		</ul>
 	{% else %}
-		<p><a href="{% url wiki-edit-page "NewPage" %}">Create a new page</a>.</p>
+		<p><a href="{% url wiki-edit-page "NewPage" %}">{% trans "Create a new page" %}</a>.</p>
 	{% endif %}
 {% endblock %}

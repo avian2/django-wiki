@@ -1,0 +1,101 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-02-21 11:07-0430\n"
+"PO-Revision-Date: 2011-02-21 11:08-0430\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: templates/wiki/base.html:78
+msgid "List all pages"
+msgstr "Listado de páginas"
+
+#: templates/wiki/base.html:78
+msgid "Powered by"
+msgstr "Corriendo con"
+
+#: templates/wiki/diff.html:7
+msgid "view content"
+msgstr "ver contenido"
+
+#: templates/wiki/diff.html:10 templates/wiki/diff.html.py:12
+#: templates/wiki/view.html:18 templates/wiki/view.html.py:20
+msgid "previous"
+msgstr "anterior"
+
+#: templates/wiki/diff.html:16 templates/wiki/diff.html.py:18
+#: templates/wiki/view.html:24 templates/wiki/view.html.py:26
+msgid "next"
+msgstr "siguiente"
+
+#: templates/wiki/edit.html:11
+msgid "Page name"
+msgstr "Nombre de la página"
+
+#: templates/wiki/edit.html:19
+msgid "Content"
+msgstr "Contenido"
+
+#: templates/wiki/edit.html:24
+msgid "You can format your text using"
+msgstr "Puede dar formato al texto usando"
+
+#: templates/wiki/edit.html:29
+msgid "Save"
+msgstr "Guardar"
+
+#: templates/wiki/index.html:6
+msgid "Index"
+msgstr "Índice de páginas"
+
+#: templates/wiki/index.html:15
+#, fuzzy
+msgid "Create a new page"
+msgstr "Crear nueva página"
+
+#: templates/wiki/view.html:9
+msgid "This page does not exist"
+msgstr "Esta página no existe"
+
+#: templates/wiki/view.html:9
+msgid "create it now"
+msgstr "crearla ahora"
+
+#: templates/wiki/view.html:15
+msgid "view changes"
+msgstr "ver cambios"
+
+#: templates/wiki/view.html:36
+msgid "revision"
+msgstr "revisión"
+
+#: templates/wiki/view.html:36
+msgid "edited"
+msgstr "editada"
+
+#: templates/wiki/view.html:36
+msgid "by"
+msgstr "por"
+
+#: templates/wiki/view.html:38
+msgid "This page has no revisions"
+msgstr "Esta página no tiene revisiones"
+
+#: templates/wiki/view.html:49
+msgid "Edit this page"
+msgstr "Editar esta página"
+
+#: templates/wiki/view.html:52
+msgid "Create this page"
+msgstr "Crear esta página"
