@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-02-21 17:43-0430\n"
-"PO-Revision-Date: 2011-02-21 17:44-0430\n"
+"POT-Creation-Date: 2011-02-21 17:56-0430\n"
+"PO-Revision-Date: 2011-02-21 17:57-0430\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -43,6 +43,10 @@ msgstr "anterior"
 #: templates/wiki/view.html:24 templates/wiki/view.html.py:26
 msgid "next"
 msgstr "siguiente"
+
+#: templates/wiki/edit.html:6
+msgid "Edit"
+msgstr "Editar"
 
 #: templates/wiki/edit.html:11
 msgid "Page name"
