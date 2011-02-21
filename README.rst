@@ -11,8 +11,21 @@ Taylor Mitchell (https://github.com/tmitchell)
 
 Sebastián Magrí (https://github.com/sebasmagri)
 
+Dependencies
+------------
+
+``Django>=1.2.5``
+
+``Markdown``
+
+``django-staticfiles`` (included in Django-1.3 as ``django.contrib.staticfiles``)
+
 Basic Usage
 -----------
+
+Add ``staticfiles`` (``django.contrib.staticfiles`` if you're using
+``Django>=1.3``) and ``wiki`` to the ``INSTALLED_APPS`` tuple in your
+project's ``settings.py``.
 
 For the default URL setup, add the following line to your root
 URLConf::
@@ -41,12 +54,9 @@ like this::
 
     WIKI_WORD = r'(?:[A-Z]+[a-z]+){2,}'
 
-Dependencies
-------------
-
-``Django>=1.2.5``
-
-``Markdown``
+Add the ``staticfiles.context_processors.static`` context processor to your 
+``TEMPLATE_CONTEXT_PROCESSORS``. If you're using ``Django>=1.3`` please read
+`the official staticfiles tutorial`_ on that `topic`_
 
 Bug Reports/Feature Requests
 ----------------------------
@@ -58,3 +68,5 @@ open a new issue and I'll do my best to respond quickly.
 .. _WikiWord: http://twiki.org/cgi-bin/view/TWiki/WikiWord
 .. _project page on Github: https://github.com/sebasmagri/django-wiki
 .. _the issues list: https://github.com/sebasmagri/django-wiki/issues
+.. _the official staticfiles tutorial: http://docs.djangoproject.com/en/dev/howto/static-files/
+.. _topic: http://docs.djangoproject.com/en/dev/howto/static-files/#with-a-context-processor
