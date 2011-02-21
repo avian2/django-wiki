@@ -12,6 +12,11 @@
   {% endfor %}
 </ul>
 {% else %}
-<p><a href="{% url wiki-edit-page "NewPage" %}">{% trans "Create a new page" %}</a>.</p>
+<p>
+  {% trans "There are still no pages" %}.
+</p>
+<p>
+  {% trans "You could start by" %}<a href="{% url wiki-edit-page "NewPage" %}">{% trans "creating a new page" %}</a>
+</p>
 {% endif %}
 {% endblock %}

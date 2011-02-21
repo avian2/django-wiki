@@ -17,7 +17,19 @@
 
     <div id="body">
       {% block content %}{% endblock %}
-      <p class="footer"><a href="{% url wiki.views.index %}">{% trans "List all pages" %}</a> | {% block footer %}{% endblock %}{% trans "Powered by" %} <a href="http://github.com/sebasmagri/django-wiki">django-wiki</a></p>
+      <p class="footer">
+	<a href="{% url wiki.views.index %}">
+	  {% trans "List all pages" %}
+	</a> 
+	|
+	<a href="{% url wiki-edit-page "NewPage" %}">{% trans "Create a new page" %}</a>
+	|
+	{% block footer %}{% endblock %}
+	{% trans "Powered by" %} 
+	<a href="http://github.com/sebasmagri/django-wiki">
+	  django-wiki
+	</a>
+      </p>
     </div>
     
 </body>
