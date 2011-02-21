@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-02-21 11:07-0430\n"
-"PO-Revision-Date: 2011-02-21 11:08-0430\n"
+"POT-Creation-Date: 2011-02-21 17:43-0430\n"
+"PO-Revision-Date: 2011-02-21 17:44-0430\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -17,11 +17,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: templates/wiki/base.html:78
+#: templates/wiki/base.html:22
 msgid "List all pages"
 msgstr "Listado de páginas"
 
-#: templates/wiki/base.html:78
+#: templates/wiki/base.html:25
+#, fuzzy
+msgid "Create a new page"
+msgstr "Crear nueva página"
+
+#: templates/wiki/base.html:28
 msgid "Powered by"
 msgstr "Corriendo con"
 
@@ -47,22 +52,31 @@ msgstr "Nombre de la página"
 msgid "Content"
 msgstr "Contenido"
 
-#: templates/wiki/edit.html:24
-msgid "You can format your text using"
-msgstr "Puede dar formato al texto usando"
-
-#: templates/wiki/edit.html:29
+#: templates/wiki/edit.html:27
 msgid "Save"
 msgstr "Guardar"
+
+#: templates/wiki/edit.html:33
+msgid "Markdown reference"
+msgstr "Ayuda de Markdown"
 
 #: templates/wiki/index.html:6
 msgid "Index"
 msgstr "Índice de páginas"
 
-#: templates/wiki/index.html:15
+#: templates/wiki/index.html:16
 #, fuzzy
-msgid "Create a new page"
-msgstr "Crear nueva página"
+msgid "There are still no pages"
+msgstr "Crear esta página"
+
+#: templates/wiki/index.html:19
+msgid "You could start by"
+msgstr "Podrías comenzar por"
+
+#: templates/wiki/index.html:19
+#, fuzzy
+msgid "creating a new page"
+msgstr "crear nueva página"
 
 #: templates/wiki/view.html:9
 msgid "This page does not exist"
@@ -70,7 +84,7 @@ msgstr "Esta página no existe"
 
 #: templates/wiki/view.html:9
 msgid "create it now"
-msgstr "crearla ahora"
+msgstr "crear página ahora"
 
 #: templates/wiki/view.html:15
 msgid "view changes"
@@ -99,3 +113,6 @@ msgstr "Editar esta página"
 #: templates/wiki/view.html:52
 msgid "Create this page"
 msgstr "Crear esta página"
+
+#~ msgid "You can format your text using"
+#~ msgstr "Puede dar formato al texto usando"
