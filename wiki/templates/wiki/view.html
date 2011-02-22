@@ -43,8 +43,9 @@
 {% block footer %}
 {% if page.id %}
 {% if not next %}
-<a href="{% url wiki-edit-page page %}">{% trans "Edit this page" %}</a> |
+<a href="{% url wiki-edit-page page %}">{% trans "Edit" %}</a> |
 {% endif %}
+<a href="{% url wiki-delete-page page %}">{% trans "Delete" %}</a> |
 {% else %}
 <a href="{% url wiki-edit-page page %}">{% trans "Create this page" %}</a> |
 {% endif %}

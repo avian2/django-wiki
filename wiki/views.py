@@ -53,7 +53,7 @@ def view_diff(request, name, rev = None, template_name = 'wiki/diff.html'):
     return render_to_response(
         template_name,
         context,
-        context_instance=RequestContext(request)
+        context_instance = RequestContext(request)
         )
 
 def view(request, name, rev = None, template_name = 'wiki/view.html'):
@@ -78,7 +78,7 @@ def view(request, name, rev = None, template_name = 'wiki/view.html'):
     return render_to_response(
         template_name,
         context,
-        context_instance=RequestContext(request)
+        context_instance = RequestContext(request)
         )
 
 
@@ -128,5 +128,19 @@ def edit(request, name, template_name = 'wiki/edit.html'):
     return render_to_response(
         template_name,
         context,
-        context_instance=RequestContext(request)
+        context_instance = RequestContext(request)
         )
+
+def delete(request, name, template_name = 'wiki/confirm_delete.html'):
+    if request.method == 'POST':
+        page = Page.objects.get(name = name)
+        page.delete()
+        return redirect('wiki-index')
+    else:
+        return render_to_response(
+            template_name,
+            {
+                'page_name' : name,
+                },
+            context_instance = RequestContext(request)
+            )
