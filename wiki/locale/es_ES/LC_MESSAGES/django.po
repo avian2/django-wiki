@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-02-21 17:56-0430\n"
-"PO-Revision-Date: 2011-02-21 17:57-0430\n"
+"POT-Creation-Date: 2011-02-22 03:54-0430\n"
+"PO-Revision-Date: 2011-02-22 03:55-0430\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -21,14 +21,38 @@ msgstr ""
 msgid "List all pages"
 msgstr "Listado de páginas"
 
-#: templates/wiki/base.html:25
-#, fuzzy
-msgid "Create a new page"
-msgstr "Crear nueva página"
-
-#: templates/wiki/base.html:28
+#: templates/wiki/base.html:26
 msgid "Powered by"
 msgstr "Corriendo con"
+
+#: templates/wiki/confirm_delete.html:6 templates/wiki/view.html:48
+msgid "Delete"
+msgstr "Eliminar"
+
+#: templates/wiki/confirm_delete.html:9
+#, python-format
+msgid ""
+"\n"
+"  Please confirm you want to delete %(page_name)s. This action is "
+"irreversible!\n"
+"  "
+msgstr ""
+"\n"
+"  Por favor confirme que desea eliminar %(page_name)s. Esta acción es "
+"irreversible!\n"
+"  "
+
+#: templates/wiki/confirm_delete.html:16
+msgid "Confirm"
+msgstr "Confirmar"
+
+#: templates/wiki/confirm_delete.html:20
+msgid "Or go back to the"
+msgstr "O, regresar a la"
+
+#: templates/wiki/confirm_delete.html:20
+msgid "page"
+msgstr "página"
 
 #: templates/wiki/diff.html:7
 msgid "view content"
@@ -44,7 +68,7 @@ msgstr "anterior"
 msgid "next"
 msgstr "siguiente"
 
-#: templates/wiki/edit.html:6
+#: templates/wiki/edit.html:6 templates/wiki/view.html:46
 msgid "Edit"
 msgstr "Editar"
 
@@ -60,21 +84,18 @@ msgstr "Contenido"
 msgid "Save"
 msgstr "Guardar"
 
-#: templates/wiki/edit.html:33
-msgid "Markdown reference"
-msgstr "Ayuda de Markdown"
-
 #: templates/wiki/index.html:6
 msgid "Index"
 msgstr "Índice de páginas"
 
 #: templates/wiki/index.html:16
 #, fuzzy
-msgid "There are still no pages"
+msgid "There are still no pages in your wiki"
 msgstr "Crear esta página"
 
 #: templates/wiki/index.html:19
-msgid "You could start by"
+#, fuzzy
+msgid "You could start"
 msgstr "Podrías comenzar por"
 
 #: templates/wiki/index.html:19
@@ -110,13 +131,19 @@ msgstr "por"
 msgid "This page has no revisions"
 msgstr "Esta página no tiene revisiones"
 
-#: templates/wiki/view.html:49
-msgid "Edit this page"
-msgstr "Editar esta página"
-
-#: templates/wiki/view.html:52
+#: templates/wiki/view.html:50
 msgid "Create this page"
 msgstr "Crear esta página"
+
+#, fuzzy
+#~ msgid "Create a new page"
+#~ msgstr "Crear nueva página"
+
+#~ msgid "Markdown reference"
+#~ msgstr "Ayuda de Markdown"
+
+#~ msgid "Edit this page"
+#~ msgstr "Editar esta página"
 
 #~ msgid "You can format your text using"
 #~ msgstr "Puede dar formato al texto usando"
