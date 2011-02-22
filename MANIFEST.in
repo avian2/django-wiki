@@ -2,3 +2,5 @@ include wiki/templates/wiki/*.html
 recursive-include wiki/static/ *.css
 include README.rst
 include VERSION.txt
+include LICENSE
+include TODO.rst
