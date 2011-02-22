@@ -6,7 +6,6 @@ These are features and tasks grouped by milestone.
 0.0.1
 -----
 
-* Delete page view
 * Migrate templates to use HTML5 tags
 * Check code with pylint
 
