@@ -1,6 +1,5 @@
 from django.core.urlresolvers import reverse
-from django.http import HttpResponseRedirect
-from django.shortcuts import get_object_or_404, render_to_response
+from django.shortcuts import get_object_or_404, redirect, render_to_response
 from django.template import RequestContext
 
 from forms import PageForm
@@ -78,7 +77,7 @@ def edit(request, name):
             if request.user.is_authenticated():
                 revision.editor = request.user
             revision.save()
-            return HttpResponseRedirect(page.get_absolute_url())
+            return redirect(page)
     else:
         if page:
             revision = page.get_latest_revision()
