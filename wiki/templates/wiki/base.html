@@ -12,12 +12,15 @@
 	  media="screen, projection"
 	  title="screen style">
 
+    {% block extrahead %}
+    {% endblock %}
+
   </head>
   <body>
 
     <div id="body">
       {% block content %}{% endblock %}
-      <p class="footer">
+      <footer>
 	<a href="{% url wiki.views.index %}">
 	  {% trans "List all pages" %}
 	</a> 
@@ -27,8 +30,9 @@
 	<a href="http://github.com/sebasmagri/django-wiki">
 	  django-wiki
 	</a>
-      </p>
+      </footer>
     </div>
-    
-</body>
+    {% block bottom_scripts %}
+    {% endblock %}
+  </body>
 </html>

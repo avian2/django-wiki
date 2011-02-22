@@ -7,6 +7,14 @@ body {
     width: 40em;
 }
 
+footer {
+    border-top: 1px solid #ccc;
+    color: #999;
+    font-size: 0.8333em;
+    line-height: 1.8em;
+    margin-top: -1px;
+}
+
 a {
     border-bottom: 1px solid;
     color: #03c;
@@ -46,14 +54,6 @@ textarea {
     font-size: 1em;
     height: 10em;
     width: 100%;
-}
-
-.footer {
-    border-top: 1px solid #ccc;
-    color: #999;
-    font-size: 0.8333em;
-    line-height: 1.8em;
-    margin-top: -1px;
 }
 
 p.nav {
