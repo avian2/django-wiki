@@ -18,7 +18,11 @@ Dependencies
 
 ``Markdown``
 
-``django-staticfiles`` (included in Django-1.3 as ``django.contrib.staticfiles``)
+``django-staticfiles`` (will be included in Django-1.3 as ``django.contrib.staticfiles``)
+
+You can install all required modules using `pip`_::
+
+    pip install -r requirements.txt
 
 Basic Usage
 -----------
@@ -55,18 +59,20 @@ like this::
     WIKI_WORD = r'(?:[A-Z]+[a-z]+){2,}'
 
 Add the ``staticfiles.context_processors.static`` context processor to your 
-``TEMPLATE_CONTEXT_PROCESSORS``. If you're using ``Django>=1.3`` please read
-`the official staticfiles tutorial`_ on that `topic`_
+``TEMPLATE_CONTEXT_PROCESSORS``. If you're using ``Django<=1.3`` please read
+the official `staticfiles tutorial`_ on that `topic`_.
 
 Bug Reports/Feature Requests
 ----------------------------
 
-Pop over to this app's `project page on Github`_ and
-check `the issues list`_ to see if it's already been reported. If not,
+Pop over to this app's `project page`_ on `Github`_ and
+check the `issues`_ list to see if it's already been reported. If not,
 open a new issue and I'll do my best to respond quickly.
 
+.. _pip: http://pip.openplans.org/
 .. _WikiWord: http://twiki.org/cgi-bin/view/TWiki/WikiWord
-.. _project page on Github: https://github.com/sebasmagri/django-wiki
-.. _the issues list: https://github.com/sebasmagri/django-wiki/issues
-.. _the official staticfiles tutorial: http://docs.djangoproject.com/en/dev/howto/static-files/
+.. _Github: https://github.com/
+.. _project page: https://github.com/sebasmagri/django-wiki/
+.. _issues: https://github.com/sebasmagri/django-wiki/issues/
+.. _staticfiles tutorial: http://docs.djangoproject.com/en/dev/howto/static-files/
 .. _topic: http://docs.djangoproject.com/en/dev/howto/static-files/#with-a-context-processor
