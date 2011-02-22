@@ -8,6 +8,7 @@ These are features and tasks grouped by milestone.
 
 * Delete page view
 * Migrate templates to use HTML5 tags
+* Check code with pylint
 
 0.0.2
 -----
@@ -23,8 +24,13 @@ These are features and tasks grouped by milestone.
 * Wiki history/Index by date
 * Index by name
 
-Future
-------
+0.0.4
+-----
+
+* Tests
+
+Future (asign milestone)
+------------------------
 
 These should be conditionally enabled via settings and thus should not be required as deps
 
