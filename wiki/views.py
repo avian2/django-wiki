@@ -1,10 +1,12 @@
 from django.core.urlresolvers import reverse
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import get_object_or_404, redirect, render_to_response
 from django.template import RequestContext
 
 from forms import PageForm
 from models import Page, Revision
 
+@login_required
 def index(request, template_name = 'wiki/index.html'):
     '''
     Lists all pages stored in the wiki
@@ -20,6 +22,7 @@ def index(request, template_name = 'wiki/index.html'):
         context_instance = RequestContext(request)
         )
 
+@login_required
 def view_diff(request, name, rev = None, template_name = 'wiki/diff.html'):
     '''
     Shows the diffs for a wiki revision
@@ -56,6 +59,7 @@ def view_diff(request, name, rev = None, template_name = 'wiki/diff.html'):
         context_instance = RequestContext(request)
         )
 
+@login_required
 def view(request, name, rev = None, template_name = 'wiki/view.html'):
     '''
     Shows a single wiki page
@@ -82,6 +86,7 @@ def view(request, name, rev = None, template_name = 'wiki/view.html'):
         )
 
 
+@login_required
 def edit(request, name, template_name = 'wiki/edit.html'):
     '''
     Allows users to edit wiki pages
@@ -131,6 +136,7 @@ def edit(request, name, template_name = 'wiki/edit.html'):
         context_instance = RequestContext(request)
         )
 
+@login_required
 def delete(request, name, template_name = 'wiki/confirm_delete.html'):
     if request.method == 'POST':
         page = Page.objects.get(name = name)
